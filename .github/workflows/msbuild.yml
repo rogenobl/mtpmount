@@ -39,7 +39,11 @@ jobs:
       
     - name: Install Dokany
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: MSIEXEC /i Dokan_x64.msi /quiet
+      run: msiexec /a Dokan_x64.msi /quiet TARGETDIR=C:\DokanExtract
+
+    - name: Install Dokany part 2
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: cd /d C:\DokanExtract && move Dokan "C:\Program Files" && dir "C:\Program Files\Dokan"
       
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
