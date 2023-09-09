@@ -39,7 +39,7 @@ jobs:
       
     - name: Install Dokany
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: MSIEXEC /i Dokan_x64.msi
+      run: MSIEXEC /i Dokan_x64.msi /quiet
       
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
