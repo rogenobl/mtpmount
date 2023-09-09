@@ -35,7 +35,7 @@ jobs:
 
     - name: Download Dokany
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run:  curl -o Dokan_x64.msi https://github.com/dokan-dev/dokany/releases/latest/download/Dokan_x64.msi
+      run:  curl -o Dokan_x64.msi https://github.com/dokan-dev/dokany/releases/latest/download/Dokan_x64.msi -L
       
     - name: Install Dokany
       working-directory: ${{env.GITHUB_WORKSPACE}}
