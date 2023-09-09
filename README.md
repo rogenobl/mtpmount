@@ -18,7 +18,8 @@ Also, the letter of the virtual drive can be set as shown in the example. This m
 
 
 # Get binaries
-find them here: https://github.com/hst125fan/mtpmount/releases/latest (there is one version for 32-bit systems and one for 64-bit systems. The 32-bit executable should also work on 64-bit systems, however.)
+find them here: https://github.com/Davilarek/mtpmount/actions
+Note: the actions get errors, but just ingore that, I will work on that later
 
 You need to install Dokan (https://github.com/dokan-dev/dokany/releases/latest) before you use mtpmount.
 
