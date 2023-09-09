@@ -54,5 +54,5 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v3.1.3
       with:
-          name: mtpmount-x64.exe
+          name: mtpmount-x64
           path: x64/Release/mtpmount.exe
