@@ -97,9 +97,6 @@
     <PreBuildEvent>
       <Command>"$(SolutionDir)\find_dokan.bat" "$(SolutionDir)\_dokancollect\include" "$(SolutionDir)\_dokancollect\lib" "$(SolutionDir)\_dokancollect\x86\lib"</Command>
     </PreBuildEvent>
-    <PostBuildEvent>
-      <Command>rmdir /q /s "$(SolutionDir)/_dokancollect"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -117,9 +114,6 @@
     <PreBuildEvent>
       <Command>"$(SolutionDir)\find_dokan.bat" "$(SolutionDir)\_dokancollect\include" "$(SolutionDir)\_dokancollect\lib" "$(SolutionDir)\_dokancollect\x86\lib"</Command>
     </PreBuildEvent>
-    <PostBuildEvent>
-      <Command>rmdir /q /s "$(SolutionDir)/_dokancollect"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -141,9 +135,6 @@
     <PreBuildEvent>
       <Command>"$(SolutionDir)\find_dokan.bat" "$(SolutionDir)\_dokancollect\include" "$(SolutionDir)\_dokancollect\lib" "$(SolutionDir)\_dokancollect\x86\lib"</Command>
     </PreBuildEvent>
-    <PostBuildEvent>
-      <Command>rmdir /q /s "$(SolutionDir)/_dokancollect"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -165,9 +156,6 @@
     <PreBuildEvent>
       <Command>"$(SolutionDir)\find_dokan.bat" "$(SolutionDir)\_dokancollect\include" "$(SolutionDir)\_dokancollect\lib" "$(SolutionDir)\_dokancollect\x86\lib"</Command>
     </PreBuildEvent>
-    <PostBuildEvent>
-      <Command>rmdir /q /s "$(SolutionDir)/_dokancollect"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DokanDriveWrapper.h" />
