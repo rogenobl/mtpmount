@@ -56,3 +56,9 @@ jobs:
       with:
           name: mtpmount-x64
           path: x64/Release/mtpmount.exe
+    - name: Upload Log
+      if: always()
+      uses: actions/upload-artifact@v3.1.3
+      with:
+          name: mtpmount-x64-build-log
+          path: msbuild.binlog
