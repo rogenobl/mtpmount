@@ -43,7 +43,7 @@ jobs:
 
     - name: Install Dokany part 2
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: cd C:\DokanExtract && move Dokan "C:\Program Files" && Get-ChildItem -Recurse "C:\Program Files\Dokan"
+      run: cd C:\DokanExtract\PFiles64 && move Dokan "C:\Program Files" && Get-ChildItem -Recurse "C:\Program Files\Dokan"
       
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
