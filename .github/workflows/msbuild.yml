@@ -32,6 +32,8 @@ jobs:
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
+      with:
+        vs-version: '[15.0,16.0)'
 
     - name: Download Dokany
       working-directory: ${{env.GITHUB_WORKSPACE}}
